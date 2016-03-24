@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/tv_ssgc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/tab_ssgc"/>
+        <TextView
+            android:layout_below="@id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实时观测"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tv_tqyb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tab_tqyb"/>
+            <TextView
+                android:layout_below="@id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气预报"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tv_tqyj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tab_tqyj"/>
+            <TextView
+                android:layout_below="@id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气预警"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tv_qxfw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tab_qxfw"/>
+            <TextView
+                android:layout_below="@id/iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气象服务"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tv_szyb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tab_szyb"/>
+            <TextView
+                android:layout_below="@id/iv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数值预报"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_tab"/>
+</RelativeLayout>
